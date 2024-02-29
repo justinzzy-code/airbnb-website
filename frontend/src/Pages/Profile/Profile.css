@@ -1,0 +1,89 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .row {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    border-color: pink;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-self: center;
+    width: 500px;
+    align-items: center;
+}
+
+#imgRow {
+    border-style: none;
+    border-radius: 10px;
+    background-color: white;
+    max-width: fit-content
+}
+
+#buttonRow {
+    border-style: none;
+    border-radius: 10px;
+    border-style: solid;
+    align-items: center;
+    background-color: white;
+    border-width: 0px;
+}
+
+
+img {
+    width: 400px;
+}
+
+button {
+    width: 140px;
+    height: 40px;
+    background-color: brown;
+    border-color: brown;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+button:hover {
+    border-color: brown;
+    background-color: white;
+    color: brown;
+    border-width: 4px;
+}
+
+.reviews2{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    width: 65%;
+}
+
+
+#temp{
+    text-align: center;
+}
+
+@media screen and (min-width: 387px) and (max-width: 800px) {
+    .profile .row {
+      width: 355px;
+    }
+    img {
+        width: 200px;
+    }
+
+    .reviews2{
+        flex-direction: column;
+        width: 90vw;
+    }
+  }

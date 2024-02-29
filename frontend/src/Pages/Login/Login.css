@@ -1,0 +1,100 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.text-center {
+    width: fit-content;
+    padding: 20px;
+}
+
+form > .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        min-height: 50px;
+        background-color: rgb(251, 209, 216);
+        max-width: 290px;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+}
+
+form > .row *  {
+    align-self: center;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    border-color: navy;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 100px;
+    width: 400px;
+    align-self: center;
+    border-radius: 10px;
+}
+
+h1 {
+    color: navy;
+}
+
+#error-row {
+    background-color: white;
+}
+
+
+
+.col {
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.col * {
+    height: 30px;
+    border-radius: 6px;
+    border-style: none;
+    color: black;
+}
+
+label {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    background-color: brown;
+    border-color: brown;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#login-button {
+    margin-top: 30px;
+}
+
+#register-button {
+    margin-bottom: 50px;
+}
+
+#error-row {
+    background-color: white;
+    border-color: white;
+}
+
+#header {
+    background-color: white;
+    justify-content: center;
+    border-color: white;
+}

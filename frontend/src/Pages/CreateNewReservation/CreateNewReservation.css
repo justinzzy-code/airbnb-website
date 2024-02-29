@@ -1,0 +1,65 @@
+.create {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.create h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.create form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create label {
+  margin-right: 10px;
+}
+
+.create input[type='date'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.create button[type='submit'] {
+  background-color: #428bca;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.create button[type='submit']:hover {
+  background-color: #3071a9;
+}
+
+@media screen and (min-width: 768px) {
+  .create form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .create input[type='date'] {
+    margin-right: 10px;
+    margin-bottom: 0;
+    width: auto;
+  }
+  .create button[type='submit'] {
+    margin-left: 10px;
+    width: auto;
+    max-width: none;
+  }
+}
+
+
+

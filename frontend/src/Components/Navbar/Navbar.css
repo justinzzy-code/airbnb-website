@@ -1,0 +1,416 @@
+:root {
+  /* use var(--blue) to access*/
+  --blue: #6495ed;
+  --white: #faf0e6;
+  --topbarh: 54px;
+}
+
+#menu-button {
+  margin-right: 50px;
+  margin-left: auto;
+  background-color: rgb(245, 205, 212);
+  border-radius: 6px;
+  border-style: none;
+  text-align: center;
+  color: navy;
+  font-weight: 600;
+}
+
+#menu-button:hover {
+  border-radius: 6px;
+  border-style: solid;
+  text-align: center;
+  border-color: white;
+  border-width: 4px;
+  color: white;
+}
+
+.lines {
+  background-color: white;
+  border-radius: 10px;
+  border-color: navy;
+  border-width: 5px;
+  border-style: solid;
+  margin-top: 31px;
+}
+
+.menu-line {
+  background-color: white;
+  color: navy;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+}
+.menu-line:hover {
+  background-color: pink;
+  color: white;
+}
+
+.menu-line a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.menu-line p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 15px;
+  margin-left: 0px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+  color: navy;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+.link:hover {
+  background-color: white;
+  color: navy;
+}
+
+#signin {
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+.topbar {
+  overflow:visible;
+  background-color: navy;
+  width:100%;
+  height:var(--topbarh);
+
+  display: flex;
+  flex-direction: row;
+}
+.topbar * {
+  margin-left: 20px;
+  align-self: center;
+  color: #eee;
+}
+
+ 
+.amblem {
+  width: 80px;
+}
+ 
+  
+@media screen and (max-width: 600px) {
+  .topbar a:not(:first-child) {display: none;}
+  .topbar a:nth-child(2) {display: block;}
+  .topbar a:first-child {display: block;}
+  .topbar a:last-child{display: block;}
+  
+  .topbar .topicon {
+    float: right;
+    display: block;
+  }
+  
+  .topbar.responsive {
+      position: relative;
+      
+  }
+  
+  .topbar.responsive .topicon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display:block;
+  }
+  .topbar.responsive div {
+    float:none;
+    display: block;
+    text-align: left;
+    background-color: inherit;
+  }
+  .topbar.responsive a {
+    float:none;
+    display: block;
+    text-align: left;
+    background-color: inherit;
+  }
+  .topbar.responsive form{
+      position: absolute;
+  
+  }
+  .topbar.responsive .dropdown-content {
+    width:inherit;
+    display:block;
+    position:initial;
+    color:inherit;
+  }
+  .topbar.responsive .dropdown-content a {
+    color:white;
+    text-indent: 15px;
+
+  }
+  .topbar.responsive .dropdown:hover .dropdown-content {
+    position: initial;
+  }
+  .topbar.responsive .dropdown:hover .dropdown-content a {
+    color:black;
+  }
+}
+  
+.logo {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.logo > img {
+  max-height:var(--topbarh);
+  padding: 0px;
+  border: 1px solid white;
+  
+}
+
+.notification {
+  position: absolute;
+  right: 3.5rem;
+  top: 0px;
+}
+
+.notification > i {
+  max-height:var(--topbarh);
+  padding: 0.2rem;
+  font-size:48px;
+  color:white;
+  
+}
+.notification .badge {
+  position: absolute;
+  left:2.5rem;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+.fa-bell:hover {
+  color: red;
+}
+
+
+/* The side navigation menu */
+.sidebar {
+height: 100%; /* 100% Full-height */
+width: 0; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0; /* Stay at the top */
+left: 0;
+background-color: #000; /* Black*/
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 60px; /* Place content 60px from the top */
+transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+  
+/* The navigation menu links */
+.sidebar a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.5s;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+color: #f1f1f1;
+}
+  
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+  
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  transition: transform .5s;
+
+}
+#Topbar {
+  transition: margin-left .5s;
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidebar {padding-top: 15px;}
+.sidebar a {font-size: 18px;}
+}
+  
+
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px auto;
+  padding: 50px;
+  max-width: 1200px;
+  transform: translateX(0);
+}
+
+
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  width:100%;
+  max-width: 650px;
+  margin: 10px auto;
+  padding: 10px 60px;
+}
+
+/*Filter stuff*/
+#filter-toggle{
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+#create-toggle{
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+#logobar {
+  width: 80%;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 800px) {
+  #logobar {
+    display: none;
+  }
+  .page-header {
+    flex-direction: column;
+  }
+}
+
+.page-header-title {
+  text-align: center;
+}
+
+.popup-box#filter-popup, .popup-box#create-popup {
+  display: none;
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.popup-box#notification-popup {
+  display: none;
+  position: absolute;
+  float: right;
+  right: 0;
+  top: 0;
+}
+
+.popup-content {
+  background-color: #eee;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  height: 60%;
+  overflow: auto;
+}
+
+.popup-content div {
+  padding: 10px;
+}
+
+.popup-box .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+.review-form > * {
+  margin: 10px;
+}
+  
+
+  
+  
+.main2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.main2-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px  black; */
+  width:75%;
+  margin: 0;
+}
+
+.main2-right {
+  width:25%;
+  min-width: 450px;
+  margin: 0;
+  padding: 1rem;
+}
+  
+.property-adder {
+  border: 1px solid #888;
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.add-property {
+  border-radius: 0.2rem;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+}
+
+.add-property:hover {
+  cursor: pointer;
+}
+  
+.img-extend-vertical {
+  background-size: cover;
+  height: 100%;
+}
+
+
+

@@ -1,0 +1,78 @@
+
+.card {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1 0;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  max-width: 30%;
+}
+
+.card:hover {
+  text-decoration: none;
+  color: #333;
+  animation: MoveUpDown 0.7s linear infinite;
+}
+
+.card-img {
+  text-align: center;
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+  max-width: 100%;
+  object-fit: cover; 
+  object-position: 100% 0;
+}
+  
+.card > .card-header {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 100%;
+}
+  
+.card > .card-subheader {
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 15px;
+  color: #611;
+  max-width: 100%;
+}
+  
+.card > .card-text {
+  text-align: left;
+  padding: 15px 30px;
+  max-width: 100%;
+}
+
+
+
+.review-card {
+  display: inline-block;
+  vertical-align: top;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* flex: 1 1 0; */
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  max-width: 30%;
+  /* display: inline-block; */
+  margin: 10px 0 0 2%;
+  flex: 0 1 25%;
+  width: calc(100% * (1/4) - 10px);
+  /* border: 1px solid gray; */
+}
+ 
+@media screen and (max-width: 800px) {
+  .review-card {
+    display: block;
+    width: 100%;
+  }
+}
