@@ -19,9 +19,9 @@ Navigate to frontend folder and run `npm install`
 
 # To Run: 
 
-Navigate to frontend folder and run `npm start` 
-
 Navigate to backend folder and run `run.sh`
+
+Navigate to frontend folder and run `npm start` 
 
 
 # Tips:
